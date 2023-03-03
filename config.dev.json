@@ -1,6 +1,6 @@
 {
   "api_key": "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",
-  "port": 8080,
+  "port": 80,
   "bot_desc": "你是一个AI助手",
   "model": "gpt-3.5-turbo-0301",
   "max_tokens": 512,
