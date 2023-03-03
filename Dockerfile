@@ -43,7 +43,6 @@ COPY --from=builder /app/chatgpt-web .
 ADD supervisord.conf /etc/supervisord.conf
 ADD config.dev.json /app/config.dev.json
 RUN cp config.dev.json config.json
-RUN go run main.go
 
 # 通过 Supervisor 管理服务
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
